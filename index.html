@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles/laptop.css">
+    <link rel="stylesheet" href="/styles/mobile.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+</head>
+<body>
+<!--This is my Navigation Bar-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"> </i></a></li>
+            <li onclick=hideSidebar()><img src="/icons/logo.png" alt="" class="logo"></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+        
+        <ul>
+            <img src="/icons/logo.png" alt="" class="logo">
+            <li class="hideonmobile"><a href="#home">HOME</a></li>
+            <li class="hideonmobile"><a href="#about">ABOUT ME</a></li>
+            <li class="hideonmobile"><a href="#services">SERVICES</a></li>
+            <li class="hideonmobile"><a href="#gallery">GALLERY</a></li>
+            <li class="hideonmobile"><a href="#contact">CONTACT US</a></li>
+            <li class="menubutton" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>  
+        </ul>
+    </nav>
+
+
+<!--This is my Home Section-->
+    <section id="home">
+        <div class="home-container">
+            <div class="container-info">
+                <div class="hero-info1">
+                    <p class="hero-section-name">Hey! My name is <span>ROMMEL AMARILLA</span>&#128075;</p>
+                </div>
+                <div class="hero-info2">
+                    <h1>A <span></span></h1>
+                </div>
+                <div class="hero-info3">
+                    <p class="hero-section-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui culpa nostrum quisquam! Ex modi ipsa provident error! Veritatis omnis consequuntur, vel est reprehenderit in, autem doloribus quasi nesciunt voluptatum ipsa.
+                        Consequuntur rerum quasi totam odit adipisci assumenda ipsum molestias sed repellat obcaecati, dicta quibusdam soluta aperiam pariatur molestiae ullam deserunt dignissimos omnis quisquam optio quo veritatis! Fuga fugiat placeat nihil.</p>
+                </div>
+                <div class="hero-info4">
+                    <div class="btn-home">
+                        <div class="btn-hire-container">
+                            <button class="hire-me">HIRE ME</button>
+                        </div>
+                        <div class="btn-download-container">
+                            <button class="download-cv">DOWNLOAD CV <i class="fa-solid fa-download"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-image">
+                <img src="/images/profile.png" alt="" class="profile">
+            </div>
+        </div>
+    </section>
+
+<!--This is my About Section-->
+    <section id="about">
+        <div class="option">
+            <h2>ABOUT ME</h2>
+        </div>
+
+        <div class="about-container">
+            <div class="about-container-profile">
+                <div class="about-img-profile">
+                    <img src="/images/profile.png" alt="" class="about-profile">
+                </div>
+                <div class="about-info-profile">
+                    <p class="about-me">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nisi quis impedit quae repellat saepe perspiciatis, voluptas ipsam dolor rerum id labore laudantium dignissimos quisquam placeat necessitatibus ducimus aliquid. Nemo.
+                    </p>
+                </div>
+            </div>
+            <div class="about-container-info">
+                <div class="tabs-info">
+                    <div class="tab-btn">
+                        <div class="tab-link-btn">
+                            <button class="tablinks" onclick="openCity(event, 'education')">Education</button>
+                        </div>
+                        <div class="tab-link-btn">
+                            <button class="tablinks" onclick="openCity(event, 'skills')">Skills</button>
+                        </div>
+                        <div class="tab-link-btn">
+                            <button class="tablinks" onclick="openCity(event, 'experience')">Experience</button>
+                        </div>
+                    </div>
+                    <div id="education" class="tabcontent">
+                        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                        <h3>Tertiary</h3>
+                        <p>Don Mariano Marcos MemorialState University</p>
+                        <p>Consolacion, Agoo, La Union</p>
+                        <p id="italic">Thesis: Online Examination System for Joyland School, Inc.</p>
+                        <p>SY: 2018 - 2022</p>
+                      </div>
+                      
+                      <div id="skills" class="tabcontent">
+                        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                        <div class="img-icon">
+                            <div class="tools"> <img src="/images/html.png" alt="" class="tools-icon">HTML</div>
+                            <div class="tools"> <img src="/images/css.png" alt="" class="tools-icon">CSS</div>
+                            <div class="tools"> <img src="/images/javascript.png" alt="" class="tools-icon">Javascript</div>
+                            <div class="tools"> <img src="/images/photoshop.png" alt="" class="tools-icon">Photoshop</div>
+                            <div class="tools"> <img src="/images/azure.png" alt="" class="tools-icon">Azure</div>
+                            <div class="tools"> <img src="/images/admin-exchange.png" alt="" class="tools-icon">Admin Exchange</div>
+                            <div class="tools"> <img src="/images/active-directory.png" alt="" class="tools-icon">Active Directory</div>
+                      </div>
+                    </div>
+                      
+                      <div id="experience" class="tabcontent">
+                        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                        <h3>IT Analyst</h3>
+                        <p>HCL Tech Philippines </p>
+                        <p>Taguig City, Philippines </p>
+                        <p>February 16, 2024 – Present </p>
+                        <h3 id="italic">Job Description</h3>
+                        <p>Provision of users account using Exchange Admin Center for New Hire </p>
+                        <p>Providing different roles to users Active Directory to access different 
+                            groups </p>
+                        <p>Prioritizing and escalating significant issues to appropriate stakeholders 
+                            or resolving team.  </p>
+                      </div>
+                    </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+<!--This is my Services Section-->
+    <section id="services">
+        <div class="option">
+            <h2>SERVICES</h2>
+        </div>
+
+        <div class="services-container">
+            <div class="services-item">
+                <img src="/icons/webdevelopment.png" alt="" class="service-icon">
+                <p class="service-title">Web Development</p>
+                <p class="service-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit eius reiciendis consequuntur maiores error eaque aspernatur.
+                </p>
+                <button class="btn-service">Visit Project</button>
+            </div>
+            <div class="services-item">
+                <img src="/icons/webdesign.png" alt="" class="service-icon">
+                <p class="service-title">Web Designer</p>
+                <p class="service-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit eius reiciendis consequuntur maiores error eaque aspernatur.
+                </p>
+                <button class="btn-service">Visit Project</button>
+            </div>
+            <div class="services-item">
+                <img src="/icons/graphicdesign.png" alt="" class="service-icon">
+                <p class="service-title">Graphic Design</p>
+                <p class="service-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit eius reiciendis consequuntur maiores error eaque aspernatur.
+                </p>
+                <button class="btn-service"> <i class="fa-brands fa-github"></i>Visit Project</button>
+            </div>
+            <div class="services-item">
+                <img src="/icons/technicalsupport.png" alt="" class="service-icon">
+                <p class="service-title">Technical Support</p>
+                <p class="service-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit eius reiciendis consequuntur maiores error eaque aspernatur.
+                </p>
+                <button class="btn-service">Visit Project</button>
+            </div>  
+        </div>
+        
+    </section>
+
+    <!--This is my Gallery Section-->
+    <section id="gallery">
+        <div class="option">
+            <h2>GALLERY</h2>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="/images/image_gallery1.jpg" alt="" class="gallery-pic">
+            </div>
+            <div class="gallery-item">
+                <img src="/images/image_gallery5.jpg" alt="" class="gallery-pic">
+            </div>
+            <div class="gallery-item">
+                <img src="/images/image_gallery3.jpg" alt="" class="gallery-pic">
+            </div>
+            <div class="gallery-item">
+                <img src="/images/image_gallery4.jpg" alt="" class="gallery-pic">
+            </div>
+            <div class="gallery-item">
+                <img src="/images/image_gallery2.jpg" alt="" class="gallery-pic">
+            </div>
+            <div class="gallery-item">
+                <img src="/images/image_gallery6.jpg" alt="" class="gallery-pic">
+            </div>
+        </div>
+
+    </section>
+
+        <!--This is my Contact Us Section-->
+        <section id="contact">
+            <div class="option">
+                <h2>CONTACT US</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Mobile No</p>
+                        <p class="contact">
+                            +63 991 556 1334
+                        </p>
+                    </div>
+                    <div class="contact-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Location</p>
+                        <p class="contact">
+                            Taguig City
+                        </p>
+                    </div>
+                    <div class="contact-email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email</p>
+                        <p class="contact">
+                            workemail.rommel@gmail.com
+                        </p>
+                    </div>
+                    <div class="contact-website">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>Website</p>
+                        <p class="contact">
+                            Facebook.com
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-message">
+                    <div class="send-message-info">
+                        <div class="send-me"><p>Send Me a Message</p></div>
+                        <div class="send-me-icons">
+                            <div class="facebook"><a href="https://www.facebook.com/rhommel.amarilla/about/" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                            <div class="github"><a href="https://github.com/Amarilla18" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                            <div class="linkedin"><a href="https://www.linkedin.com/in/rommel-amarilla-a9067a248?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN6QKvfnCRU%2BsY19LNXlFQg%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                            <div class="tiktok"><a href="#"><i class="fa-brands fa-tiktok"></i></a></div>
+                        </div>
+                        <div class="send-me">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="send-me">
+                            <input type="email" placeholder="Email" >
+                        </div>
+
+
+
+                    </div>
+                    <div class="send-message">
+                        <div class="type-message">
+                            <input type="text" placeholder="Enter message" class="send-text">
+                        </div>
+                        <button class="send">Send Message</button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

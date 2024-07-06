@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media only screen and (max-width:767px){
+
+    .hideonmobile{
+        display: none;
+        
+    }
+
+    .menubutton{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        z-index: 999;
+    }
+    nav li a{
+        font-weight: 600;
+    }
+   body{
+    padding-left: 0;
+   }
+   .logo{
+    left: 25px;
+    display: none;
+   }
+    .home-container{
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    .hero-info1{
+        text-align: center;
+    }
+    h1{
+        font-size: large;
+        text-align: center;
+    }
+
+    .hero-section-info{
+        max-width:350px;
+    }
+    .btn-home{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        margin-bottom: 50px;
+    }
+    .hire-me{
+        margin: 20px 0 20px 0;
+
+    }
+    .profile{
+        display: none;
+    }
+
+
+/* About Section Style */
+    .option{
+        text-align: center;
+    }
+    .about-container-profile{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        
+    }
+    .about-info-profile .about-me{
+        text-align: justify;
+        color: rgb(182, 216, 119);
+        width: 350px;
+        padding-bottom: 50px;
+      
+    }
+    .about-container-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        width: 90%;
+    }
+    .tabcontent{
+        border: 1px solid rgba(182, 216, 119,0.3);  
+        text-align: center;
+    }
+    .img-icon{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tab-btn{
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .topright{
+        top: 10px;
+    }
+    .tabs-info{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+   
+   /* Services Section Style */
+
+    .services-container{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+ 
+    /* Gallery Section Style */
+
+    .gallery-container{
+        display: grid;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+
+    }
+
+    /* Contact Section Style */
+
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+ 
+    .contact-info{
+        margin: 0;
+        display: none;
+    }
+    .send-text{
+        flex: 1;
+        max-width: 400px;
+    }
+    .send-message-info{
+        column-gap: 60px;
+    }
+    .send-message{
+        place-items: center;
+    }
+}
